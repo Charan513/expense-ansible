@@ -16,11 +16,11 @@
   - name: connect to mysql server
     community.mysql.mysql_info:
       login_user: root
-      login_password: "{{ mysql_root_password }}"
+      login_password: ExpenseApp@1
       login_host: mysql.charankandukuri.site
     register: mysql_info
     # ignore_errors: true
 
   - name: Print the output using register
     ansible.builtin.debug:
-      msg: "{{ mysql_info }}"
+      msg: "MySQL info: {{ mysql_info }}"
