@@ -1,7 +1,7 @@
 - name: Configure mysql server
   hosts: mysql
   become: yes
-  taksk:
+  task:
   - name: Install Mysql Server
     ansible.builtin.debug:
       name: mysql-server
